@@ -325,14 +325,3 @@ npm run dev
 3. Push to the branch (`git push origin feature/amazing-feature`)
 4. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see LICENSE file for details.
-
-## Support
-
-For issues, questions, or suggestions, please open an issue on the project repository.
-
----
-
-**Last Updated**: May 2026
