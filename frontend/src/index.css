@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #080C14;
+  --bg-secondary: #0D1525;
+  --bg-glass: rgba(255,255,255,0.04);
+  --accent-primary: #00D4FF;
+  --accent-success: #00E5A0;
+  --accent-warning: #FFB347;
+  --accent-danger: #FF4D6D;
+  --text-primary: #F0F4FF;
+  --text-muted: #5A6A8A;
+  --border-subtle: rgba(0,212,255,0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg-primary);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(0,212,255,0.12), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(0,229,160,0.08), transparent 30%),
+    var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080C14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0,212,255,0.25);
+  border-radius: 999px;
+}
+
+.page-shell {
+  min-height: 100vh;
+}
+
+.glass-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(0,212,255,0.12);
+  backdrop-filter: blur(20px);
+}
