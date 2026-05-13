@@ -303,7 +303,7 @@ async def get_reports(
         .join(Prediction)
         .join(Dataset)
         .where(Dataset.owner_id == current_user.id)
-        .order_by(Report.created_at.desc())
+        .order_by(Report.created_at.asc())
     )
 
     return result.scalars().all()
